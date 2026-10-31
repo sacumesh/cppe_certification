@@ -9,7 +9,7 @@ bool isPrime(unsigned n) {
         return false;
     }
 
-    for (int i = 2; i * i < n + 1; i+=6)
+    for (int i = 2; i * i <= n; i+=6)
         if (n % i == 0)
             return false;
 
